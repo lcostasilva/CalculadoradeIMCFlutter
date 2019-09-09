@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.refresh),
@@ -70,14 +70,14 @@ class _HomeState extends State<Home> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Icon(Icons.person_outline, size: 120.0, color: Colors.green),
+                Icon(Icons.person_outline, size: 120.0, color: Colors.blue),
                 TextFormField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       labelText: "Peso (kg)",
-                      labelStyle: TextStyle(color: Colors.green)),
+                      labelStyle: TextStyle(color: Colors.blue)),
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.green, fontSize: 25.0),
+                  style: TextStyle(color: Colors.blue, fontSize: 25.0),
                   controller: weightController,
                   validator: (value) {
                     return value.isEmpty ? 'Insira seu peso!' : null;
@@ -87,10 +87,10 @@ class _HomeState extends State<Home> {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     labelText: "Altura (cm)",
-                    labelStyle: TextStyle(color: Colors.green),
+                    labelStyle: TextStyle(color: Colors.blue),
                   ),
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.green, fontSize: 25.0),
+                  style: TextStyle(color: Colors.blue, fontSize: 25.0),
                   controller: heightController,
                   validator: (value) {
                     return value.isEmpty ? 'Insira sua Altura!' : null;
@@ -110,14 +110,14 @@ class _HomeState extends State<Home> {
                         "Calcular",
                         style: TextStyle(color: Colors.white),
                       ),
-                      color: Colors.green,
+                      color: Colors.blue,
                     ),
                   ),
                 ),
                 Text(
                   _infoText,
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.green, fontSize: 25.0),
+                  style: TextStyle(color: Colors.blue, fontSize: 25.0),
                 ),
               ],
             ),
